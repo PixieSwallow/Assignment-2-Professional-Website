@@ -1,0 +1,191 @@
+* {
+margin: 0;
+padding: 0;
+}
+.background-image {
+background-image: url('1.jpg');
+background-size: cover;
+background-repeat: no repeat;
+height: 100vh;
+}
+
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #009688, #00796b); /* Gradient background */
+    color: #fff;
+    padding: 15px 20px; /* Slightly increased padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.logo {
+    font-size: 28px; /* Slightly larger font size */
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase; /* Capitalize text for emphasis */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Increased spacing between menu items */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+    color: #ff9800; /* Color change on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px 50px;
+}
+
+.intro img,
+.tours img,
+.gallery img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.intro,
+.tours,
+.gallery,
+.contact {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #ff9800;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-grid img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #333;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(135deg, #009688, #00796b); /* Match header gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 15px 20px; /* Slightly increased padding */
+    position: relative;
+    bottom: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between sections */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
